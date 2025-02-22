@@ -10,6 +10,6 @@ model = load('model.pkl')
 
 y_pred = model.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
-threshold = 1.1
+threshold = 0.8
 assert accuracy > threshold, "Accuracy is below given threshold"
 print(f'Accuracy: {accuracy}')

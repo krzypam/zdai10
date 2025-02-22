@@ -29,4 +29,10 @@ jobs:
       - name: Validate model
         run: python validate_model.py
 
+      - name: Upload trained model
+        uses: actions/upload-artifact@v4
+        with:
+          name: trained_model
+          path: model.pkl
+
 
